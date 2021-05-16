@@ -72,20 +72,23 @@ else:
                            print(bcolors.ERRO+"ATENCAO NAO NOS RESPONSABILISAMOS POR SEUS ATOS"+bcolors.RESET)
                            print(bcolors.WARNING+"O PROGRAMA A SEGUIR CONTEM ARQUIVOS PERIGOSOS ESTEJA CIENTE DISSO"+bcolors.RESET)
                            print(bcolors.OK+"ABRINDO MSFCONSOLE"+bcolors.RESET)
-                           os.system('msfconsole')
+                           processo = subprocess.call(["msfconsole"], shell=True)
        
                        if escolha2 == 2:
+                           menu = 0
+                           print(bcolors.ERRO+"ATENCAO NAO NOS RESPONSABILISAMOS POR SEUS ATOS"+bcolors.RESET)
+                           print(bcolors.WARNING+"O PROGRAMA A SEGUIR CONTEM CAPACIDADES PERIGOSOS ESTEJA CIENTE DISSO"+bcolors.RESET)
                            print(bcolors.OK+"ABRINDO NMAP"+bcolors.RESET)
-                           os.system('nmap')
-       
-       
+                           processo = subprocess.call(["nmap"], shell=True)
                       
        
                        if escolha2 == 3:
-                           print(bcolors.OK+"ABRINDO AIRCRACK-NG"+bcolors.RESET)
-                           os.system('aircrack-ng')
-                       if escolha2 == 4:
-                           os.system('Firefox')
+                           menu = 0
+                           print(bcolors.ERRO+"ATENCAO NAO NOS RESPONSABILISAMOS POR SEUS ATOS"+bcolors.RESET)
+                           print(bcolors.WARNING+"O PROGRAMA A SEGUIR CONTEM CAPACIDADES PERIGOSOS ESTEJA CIENTE DISSO"+bcolors.RESET)
+                           print(bcolors.OK+"ABRINDO MSFCONSOLE"+bcolors.RESET)
+                           processo = subprocess.call(["aircrack-ng"], shell=True)
+                           
             
             if escolha1 ==2:
                 os.system("clear")
